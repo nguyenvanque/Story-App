@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:id="@+id/homeLayout"
+    tools:context=".activity.loaitruyen.DanhSachLoaiTruyenActivity">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/toolbar"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_exit"
+            app:tint="@color/black"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+        <TextView
+            android:text="Story APP"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#049540"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_person"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@color/black" />
+    </RelativeLayout>
+    <androidx.appcompat.widget.SearchView
+        android:layout_below="@id/toolbar"
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:focusable="false"
+        android:background="@drawable/search_bg"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="16dp"
+        android:ems="10"
+        android:hint="Nhập tên loại cần tìm"
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:textColor="#62878F"
+        app:queryHint="Nhập tên loại cần tìm" />
+
+    <RelativeLayout
+        android:layout_below="@id/edtSearch"
+        android:id="@+id/tv"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Story categories"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textStyle="bold"
+            android:text="View all"
+            android:textColor="@color/grey"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvLoaitruyen"
+        android:layout_below="@id/tv"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="vertical"
+        app:spanCount="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/btnThem"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10dp"
+    app:backgroundTint="#00C853"
+    app:tint="@color/white"
+    android:src="@drawable/ic_baseline_add_24"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+</RelativeLayout>

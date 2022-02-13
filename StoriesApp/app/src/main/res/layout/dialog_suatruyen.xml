@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:background="@drawable/background_dialog"
+    android:padding="10dp"
+    tools:context=".activity.truyen.InsertTruyenActivity">
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/editTentruyen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Nhập tên"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edt_ui_click"
+            android:inputType="textCapWords"
+            />
+
+
+
+        <EditText
+            android:id="@+id/editHinhtruyen"
+            android:hint="Nhập link hình"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edt_ui_click"
+            />
+        <EditText
+            android:id="@+id/editMota"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edt_ui_click"
+            android:hint="Nhập mô tả truyện"
+
+            />
+        <EditText
+            android:id="@+id/edtGia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/edt_ui_click"
+            android:hint="Nhập giá truyện"
+
+            />
+
+        <Spinner
+            android:id="@+id/spinerloaitruyen"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"/>
+        <!-- Login Button -->
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btnSua"
+              android:layout_weight="1"
+              android:layout_marginRight="10dp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dip"
+              android:background="@drawable/button_ui2"
+              android:text="Sửa"
+              android:textColor="@color/white" />
+
+          <!-- Link to Login Screen -->
+
+          <androidx.appcompat.widget.AppCompatButton
+              android:id="@+id/btnHuy"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dip"
+              android:layout_weight="1"
+              android:layout_marginLeft="10dp"
+              android:background="@drawable/button_ui2"
+              android:text="Hủy"
+              android:textAllCaps="false"
+              android:textColor="@color/white"
+              android:textSize="15dp" />
+      </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

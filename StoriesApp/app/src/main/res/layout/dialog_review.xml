@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:background="@drawable/background_dialog">
+     <TextView
+         android:text="Đánh giá"
+         android:layout_marginTop="20dp"
+         android:textColor="#44DF85"
+         android:textSize="25dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/RatingBar"
+        />
+
+    <EditText
+
+        android:background="@drawable/edt_ui_click"
+        android:id="@+id/edtMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:padding="14dp"
+        android:hint="Vui lòng nhập đánh giá"
+        android:textColor="#090C19"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/txt_Titleconfirm"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="25dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnGui"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:text="Gửi"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_ui2"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHuy"
+            android:layout_width="wrap_content"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:background="@drawable/button_ui2"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
